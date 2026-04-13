@@ -30,9 +30,6 @@ SUBMITTED: ${new Date().toLocaleString('en-US', {timeZone: 'America/New_York'})}
     const firstName = nameParts[0] || '';
     const lastName = nameParts.slice(1).join(' ') || '';
 
-    // ← YOUR GHL LOCATION ID (replace this value)
-    const LOCATION_ID = 'sz3hqMSQ0Gt6l2g6kJ31';
-
     const ghlResponse = await fetch('https://services.leadconnectorhq.com/contacts/', {
       method: 'POST',
       headers: {
@@ -45,7 +42,6 @@ SUBMITTED: ${new Date().toLocaleString('en-US', {timeZone: 'America/New_York'})}
         lastName,
         phone: data.phone,
         postalCode: data.zip || '',
-        locationId: LOCATION_ID,           // ← THIS WAS MISSING
         source: 'ICE Quote Tool',
         tags: ['ice-quote-tool', 'quote-lead'],
         customFields: []
