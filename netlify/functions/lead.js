@@ -33,7 +33,7 @@ SUBMITTED: ${new Date().toLocaleString('en-US', {timeZone: 'America/New_York'})}
     const ghlResponse = await fetch('https://services.leadconnectorhq.com/contacts/', {
       method: 'POST',
       headers: {
-        'Authorization': 'Bearer pit-f2e85033-d287-4df3-a15e-6ae820ddf330',
+        'Authorization': 'Bearer pit-9b0c1a20-e9f5-4b26-9579-364dcb2d95a9',
         'Content-Type': 'application/json',
         'Version': '2021-07-28'
       },
@@ -60,7 +60,7 @@ SUBMITTED: ${new Date().toLocaleString('en-US', {timeZone: 'America/New_York'})}
       const noteRes = await fetch(`https://services.leadconnectorhq.com/contacts/${contactId}/notes`, {
         method: 'POST',
         headers: {
-          'Authorization': 'Bearer pit-f2e85033-d287-4df3-a15e-6ae820ddf330',
+          'Authorization': 'Bearer pit-9b0c1a20-e9f5-4b26-9579-364dcb2d95a9',
           'Content-Type': 'application/json',
           'Version': '2021-07-28'
         },
