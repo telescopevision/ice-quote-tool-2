@@ -36,7 +36,7 @@ exports.handler = async function(event) {
       },
       body: JSON.stringify({
         from: 'ICE Quote Tool <onboarding@resend.dev>',
-        to: ["customerservice@icecoolingorlando.com", "Samantha.icecooling@gmail.com", "Telescope.visionstudios@gmail.com"],
+        to: ['robert.icecooling@gmail.com'],
         subject: `🧊 New Quote Lead: ${data.name} — ${data.price}`,
         html: emailBody
       })
