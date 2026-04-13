@@ -23,6 +23,7 @@ exports.handler = async function(event) {
 <p><strong>UPSELLS:</strong> ${data.upsells}</p>
 <p><strong>PATH:</strong> ${data.path}</p>
 <p><strong>AC AGE:</strong> ${data.ac_age}</p>
+<p><strong>MOBILE HOME:</strong> ${data.mobile_home || 'Not selected'}</p>
 <p><strong>SCHEDULE:</strong> ${data.schedule_day} - ${data.schedule_time}</p>
 <hr>
 <p><strong>SUBMITTED:</strong> ${new Date().toLocaleString('en-US', {timeZone: 'America/New_York'})}</p>
