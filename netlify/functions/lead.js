@@ -42,6 +42,7 @@ SUBMITTED: ${new Date().toLocaleString('en-US', {timeZone: 'America/New_York'})}
         lastName,
         phone: data.phone,
         postalCode: data.zip || '',
+        locationId: 'sz3hqMSQ0Gt6l2g6kJ31',
         source: 'ICE Quote Tool',
         tags: ['ice-quote-tool', 'quote-lead'],
         customFields: []
@@ -49,8 +50,6 @@ SUBMITTED: ${new Date().toLocaleString('en-US', {timeZone: 'America/New_York'})}
     });
 
     const ghlData = await ghlResponse.json();
-
-    // Log full GHL response for debugging
     console.log('GHL response status:', ghlResponse.status);
     console.log('GHL response body:', JSON.stringify(ghlData));
 
